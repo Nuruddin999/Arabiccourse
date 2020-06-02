@@ -1,0 +1,68 @@
+
+.indexchapter {
+  display: flex;
+  margin: 10px;
+}
+
+.chapterlink {
+  margin-left: 2%;
+}
+.words {
+  margin-top: 10%;
+}
+.wordcard {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #7c4dff;
+  padding: 1%;
+  position: fixed;
+  top: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-size: 3em;
+}
+
+.translation {
+  font-size: 2em;
+  margin-top: 1%;
+}
+.phrasessection {
+  background:#f5f5f5;
+}
+.phrasewrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 2%;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+  background-color: #fff;
+  .phrase {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+      width: 30%;
+    }
+
+    span {
+      font-size: 2em;
+    }
+  }
+}
