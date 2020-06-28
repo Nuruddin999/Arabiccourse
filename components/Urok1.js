@@ -1,19 +1,42 @@
-import Link  from "next/link";
+import Link from "next/link";
 import style from "./mainstyle.module.css"
-const urok1 = ({children}) => {
+import Head from "next/head";
+import { useState } from "react";
+import { NavDrawer, CloseIcon } from "../pages/urok1/styles";
+import NavMenu from "./NavMenu";
+const urok1 = ({ children, number }) => {
+    let words = `/urok${number}/main`
+    let phrases = `/urok${number}/phrazi`
+    let exercises = `/urok${number}/uprazneniya`
+    const [menuOpened, setOpened] = useState(false)
     return <div>
+        <Head>
+
+        </Head>
+        <NavDrawer opened={menuOpened} >
+            <CloseIcon onClick={() => setOpened(!menuOpened)}>
+                x
+        </CloseIcon>
+            <NavMenu />
+        </NavDrawer>
+
         <nav>
             <div className={style.menu}>
-                <Link as="/urok1/slova" href="/urok1/slova">
+                <div className={style.burger} onClick={() => setOpened(!menuOpened)}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <Link as={words} href={words}>
                     <a>Слова</a>
                 </Link>
-
-                <Link as="/urok1/phrazi" href="/urok1/phrazi">
+                <Link as={phrases} href={phrases}>
                     <a>Фразы</a>
                 </Link>
-                <Link as="/urok1/uprazneniya" href="/urok1/uprazneniya">
+                <Link as={exercises} href={exercises}>
                     <a>Упражнения</a>
                 </Link>
+
             </div>
 
         </nav>
@@ -23,6 +46,7 @@ const urok1 = ({children}) => {
         <style jsx global>{`
         body {
           margin: 0;
+            font-family: "Ubuntu", sans-serif;
         }
       `}</style>
     </div>

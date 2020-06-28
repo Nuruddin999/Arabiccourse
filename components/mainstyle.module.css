@@ -1,4 +1,7 @@
+@import url("https://github.com/Nuruddin999/arabiconlinefiles/blob/master/fonts/Ubuntu-Medium.ttf");
 .indexchapter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px;
 }
@@ -8,31 +11,53 @@
 }
 
 .words {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .wordcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
 }
 
 .menu {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #7c4dff;
-  padding: 1%;
+  padding: 3% 0;
   position: fixed;
   top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
 }
+
+.menu .burger div {
+  margin: 3px;
+  width: 20px;
+  height: 3px;
+  background: white;
+}
+
 .menu a {
   color: white;
   text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .title {
+  margin-top: 2%;
   font-size: 3em;
 }
 
@@ -46,24 +71,287 @@
 }
 
 .phrasewrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5%;
   padding: 2%;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: #fff;
 }
+
 .phrasewrapper .phrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2%;
 }
+
 .phrasewrapper .phrase img {
   width: 30%;
 }
+
 .phrasewrapper .phrase span {
   font-size: 2em;
 }
 
+.phrasewrapper embed {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.uprazneninya {
+  margin-top: 10%;
+}
+
+.uprazneninya .title {
+  display: block;
+  text-align: center;
+  color: #8c5383;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  margin: 3%;
+}
+
+.uprazneninya .picturequiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 6%;
+}
+
+.uprazneninya .picturequiz .variants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.uprazneninya .finish2words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15% 2%;
+}
+
+.uprazneninya .finish2words input {
+  border-right: unset;
+  border-left: unset;
+  border-top: unset;
+  border-radius: unset;
+  border-bottom: 2px solid #536dfe;
+  margin: 0 6%;
+}
+
+.uprazneninya .finish2words .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uprazneninya .finish2words .imgs img {
+  width: 25%;
+  margin: 0 10px;
+}
+
+.uprazneninya .finish2words .words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uprazneninya .finish2words .words .inpword {
+  width: 25%;
+  font-size: 1.5em;
+}
+
+.uprazneninya .finish2words .words .inputword {
+  padding: 5%;
+  font-size: 2em;
+  width: 25%;
+}
+
+.uprazneninya .finish2words .words .word {
+  font-size: 9vw;
+}
+
+.uprazneninya .finish2words .words .va {
+  display: block;
+  width: 5%;
+  font-size: 2em;
+}
+
+.uprazneninya button {
+  display: block;
+  background: #388e3c;
+  color: white;
+  border: unset;
+  padding: 2%;
+  width: 60%;
+  margin: 2% auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.uprazneninya button .buttontext {
+  letter-spacing: 7px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.makewordcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2%;
+}
+
+.makewordcontainer .makeword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+}
+
+.makewordcontainer .makeword svg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+.makewordcontainer .makeword .wordcontainer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  display: block;
+  padding: 0 2%;
+  font-size: 2em;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  text-align: center;
+}
+
+.makewordcontainer .makeword button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+.makewordcontainer .letterscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.makewordcontainer .letterscontainer button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  background: #0288d1;
+  color: white;
+  margin: 1%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+  border-color: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  border-width: thin;
+}
+
+.dictationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dictationContainer .wordContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.dictationContainer .wordContainer input {
+  font-size: 1.5em;
+}
+
+.smallfont {
+  font-size: 1em;
+}
+
+.soundbutton {
+  padding: 3%;
+  background: #7c4dff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 /*# sourceMappingURL=mainstyle.module.css.map */
