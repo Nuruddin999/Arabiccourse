@@ -31,6 +31,7 @@ $shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   top: 0;
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 1px;
+  z-index: 10;
 .burger {
   div {
 margin: 3px;
@@ -101,15 +102,7 @@ margin: 2%;
   }
 
   .picturequiz {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-top: 6%;
-
-    .variants {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
   .finish2words {
@@ -247,8 +240,5 @@ margin: 2%;
   font-size: 1em;
 }
 .soundbutton {
-  padding: 3%;
-  background: #7c4dff;
-  border-radius: 10px;
   box-shadow: $shadow;
 }

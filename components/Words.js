@@ -15,6 +15,7 @@ const Words = ({ words, lessonNumber }) => {
     }
 
     const playAudio = (url) => {
+
         let audio = new Audio(url)
         let playPromise = audio.play();
         if (playPromise !== undefined) {
@@ -28,17 +29,21 @@ const Words = ({ words, lessonNumber }) => {
 
     return <Urok1 number={lessonNumber}>
         <Head>
-            <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         </Head>
         <div className={styles.words}>
             <Swiper {...params}>
                 {words.map(word => <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <img src={word.img} width="400px" height="250px" />
+
+                    <img src={word.img} width="450px" height="250px" />
+
+
                     <span className={styles.title}>{word.title}</span>
                     <span className={styles.translation}>{word.translation}</span>
-                    <div className={styles.soundbutton}>
-                        <img src="/img/speaker.svg" width="35px" height="35px" onClick={() => playAudio(word.audio)} />
-                    </div>
+
+                    <img src="/img/play.svg" width="45px" height="45px" onClick={() => playAudio(word.audio)} />
+
 
                 </div>
                 )}

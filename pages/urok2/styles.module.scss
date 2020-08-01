@@ -1,0 +1,41 @@
+@mixin title {
+    display: block;
+    color: green;
+    font-size: 16px;
+    margin:20px 20px 0;
+    text-align: center; 
+}
+.main {
+    margin-top: 50px;
+    .words {
+      margin-top: 50px;
+    }
+  }
+  
+.title {
+  @include title();
+}
+.audiotitle {
+  @include title();
+}
+@media screen and(min-width:1280px){
+  .main {
+    margin-top: 120px;
+  }
+   
+.title {
+  @include title();
+  margin:30px 20px 0;
+}
+}
+
+@media screen and(min-width:1440px){
+  .main {
+    margin-top: 130px;
+  }
+ 
+.title {
+  @include title();
+  margin:40px 20px 0;
+}  
+}
