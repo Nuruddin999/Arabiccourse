@@ -1,13 +1,13 @@
 export const lesson2 = {
-    newwords: [{ img: "/img/lesson2/box.svg", title: "صُنْدُوقٌ", translation: "коробка", audio: "/audio/urok2/صندوق.mp3" }, {
+    newwords: [{ img: "/img/lesson2/box.svg", title: "صُنْدوقٌ", translation: "коробка", audio: "/audio/urok2/صندوق.mp3" }, {
         img: "/img/lesson2/chalk.svg",
-        title: "طَبَاشِيرٌ",
+        title: "طَباشيرٌ",
         translation: "мел", audio: "/audio/urok2/طباشير.mp3"
-    }, { img: "/img/lesson2/door.svg", title: "بَابٌ", translation: "дверь", audio: "/audio/urok2/باب.mp3" }, {
-        img: "/img/lesson2/window.svg", title: "نَافِذَةٌ", translation: "окно", audio: "/audio/urok2/نافذة.mp3"
+    }, { img: "/img/lesson2/door.svg", title: "بابٌ", translation: "дверь", audio: "/audio/urok2/باب.mp3" }, {
+        img: "/img/lesson2/window.svg", title: "نافِذَةٌ", translation: "окно", audio: "/audio/urok2/نافذة.mp3"
     }, { img: "/img/lesson2/chair.svg", title: "كُرْسِيٌّ", translation: "стул", audio: "/audio/urok2/كرسي.mp3" }, {
         img: "/img/lesson2/portfolio.svg",
-        title: "حَقِيبَةٌ",
+        title: "حَقيبَةٌ",
         translation: "сумка", audio: "/audio/urok2/حقيبة.mp3"
     }, { img: "/img/lesson2/sponge.svg", title: "مَسَّاحَةٌ", translation: "тряпка", audio: "/audio/urok2/مساحة.mp3" }, {
         img: "/img/lesson2/bookshelf.svg",
@@ -34,14 +34,14 @@ export const lesson2 = {
     phrases: [{
         img1: "/img/lesson2/box.svg",
         img2: "/img/lesson2/chalk.svg",
-        word1: "صُنْدُوقٌ",
-        word2: "طَبَاشِيرٌ",
+        word1: "صُنْدوقٌ",
+        word2: "طَباشيرٌ",
         translation: "мел и коробка"
     }, {
         img1: "/img/lesson2/door.svg",
-        word1: "بَابٌ",
+        word1: "بابٌ",
         img2: "/img/lesson2/window.svg",
-        word2: "نَافِذَةٌ",
+        word2: "نافِذَةٌ",
         translation: "окно и дверь"
     }, {
         embed: "/img/lesson2/bookonchair.svg",
@@ -74,7 +74,7 @@ export const lesson2 = {
     }, {
         embed: "/img/lesson2/bookonshelf.svg",
         word1: " مَكْتَبَةٍ ",
-        word2: "كِتَابٌ",
+        word2: "كِتابٌ",
         translation: "книга в библиотеке"
     }],
     picturequiz: [{ img: "/img/lesson2/door.svg", vars: ["صٌنْدوقٌ", "كُرَّاسَةٌ", "مَكْتَبَةٍ ", "بابٌ"] }, {
@@ -82,10 +82,10 @@ export const lesson2 = {
         vars: ["مَكْتَبٌ", "نافِذَةٌ", "خَريطَةٌ", "كُرْسِيٌّ"]
     }, { img: "/img/lesson2/map.svg", vars: ["كُرَّاسَةٌ", "فَوْقَ", "نافِذَةٌ", , "خَريطَةٌ"] }, {
         img: "/img/lesson2/bookshelf.svg",
-        vars: ["كِتَابٌ", "بِطاقَةٌ", "مَكْتَبَةٌ", "فَوْقَ"]
-    }, { img: "/img/lesson2/sponge.svg", vars: ["مُدَرِّسٌ", "مَسّاحَةٌ", "قَلَمٌ", "كُرْسِيٌّ"] }, {
+        vars: ["كِتابٌ", "بِطاقَةٌ", "مَكْتَبَةٌ", "فَوْقَ"]
+    }, { img: "/img/lesson2/sponge.svg", vars: ["مُدَرِّسٌ", "مَسَّاحَةٌ", "قَلَمٌ", "كُرْسِيٌّ"] }, {
         img: "/img/lesson2/idcard.svg",
         vars: ["كُرَّاسَةٌ", "بِطاقَةٌ", "مَكْتَبٌ", "مَقْعَدٌ"]
     }],
-    correctWord: [{ word: "صُنِدُقٌ", right: "صُنْدوقٌ" }, { word: "حامِنٌ", right: "حامِلٌ" }, { word: "لابٌ", right: "بَابٌ" }]
+    correctWord: [{ word: "صُنِدُقٌ", right: "صُنْدوقٌ" }, { word: "حامِنٌ", right: "حامِلٌ" }, { word: "لابٌ", right: "بابٌ" }]
 }
