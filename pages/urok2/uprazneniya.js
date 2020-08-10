@@ -14,7 +14,7 @@ import CheckIcon from "../../components/CheckIcon";
 import WrongIcon from "../../components/WrongIcon";
 import { itemStyles } from "./styles"
 const uprazneniya = () => {
-    const rightAnswers = ["بِطاقَةٌ", "مَسّاحَةٌ", "مَكْتَبَةٌ", "خَريطَةٌ", "كُرْسِيٌّ", "بابٌ"]
+    const rightAnswers = ["بِطاقَةٌ", "مَسَّاحَةٌ", "مَكْتَبَةٌ", "خَريطَةٌ", "كُرْسِيٌّ", "بابٌ"]
 
     const [state, setState] = useState({
         randomwords: [],
