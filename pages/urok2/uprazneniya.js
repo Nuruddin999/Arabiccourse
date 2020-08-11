@@ -111,7 +111,7 @@ const uprazneniya = () => {
         </div>
         <span className={styles.audiotitle}>Напишите данные слова на русском языке</span>
         {state.randomwords.map((word, index) => index > 4 && index <= state.randomwords.length - 1 ? <Grid container justify={"center"} alignItems={"center"} alignContent={"center"}>
-            {sel ? state.rusVariants[index] === word.translation ? <Grid item xs={1} sm={1}>
+            {sel ? state.rusVariants[index] === word.translation || state.rusVariants[index] === "на" && word.title === "فَوْقَ" ? <Grid item xs={1} sm={1}>
                 <CheckIcon />
             </Grid> : <Grid item xs={1} sm={1}>
                     <WrongIcon />
