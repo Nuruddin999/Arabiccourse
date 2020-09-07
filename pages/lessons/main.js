@@ -1,3 +1,5 @@
+import Head from "next/head"
+import styles from "../../components/mainstyle.module.css"
 const main = () => {
     const makelessons = () => {
         let list = []

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Grid, Typography, TextField } from "@material-ui/core";
 import styles from "../pages/urok2/styles.module.css"
 import { mergeClasses } from "@material-ui/styles";
-import { itemStyles } from "../pages/urok2/styles";
+import { itemStyles } from "./styles";
 import CheckIcon from "./CheckIcon";
 import WrongIcon from "./WrongIcon";
 const CorrectWord = ({ words, textChange, variants, isChecked }) => {

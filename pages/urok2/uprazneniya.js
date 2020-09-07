@@ -9,10 +9,11 @@ import { shuffle } from "../../public/utils";
 import { Grid, TextField, Typography } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { changeL1state } from "../../redux/actions/lesson1actions";
-import { Title, Button } from "../urok1/styles";
+import { Title } from "../../components/l1styles";
 import CheckIcon from "../../components/CheckIcon";
 import WrongIcon from "../../components/WrongIcon";
-import { itemStyles } from "./styles"
+import { itemStyles } from "../../components/styles"
+import styledComp from "../../components/l1styles"
 const uprazneniya = () => {
     const rightAnswers = ["بِطاقَةٌ", "مَسَّاحَةٌ", "مَكْتَبَةٌ", "خَريطَةٌ", "كُرْسِيٌّ", "بابٌ"]
 
@@ -131,7 +132,7 @@ const uprazneniya = () => {
 
         </Grid> : null)}
 
-        <Button sel={sel} onClick={check}><span>{sel ? "Вернуться к упражнениям" : "Проверить"}</span></Button>
+        <styledComp.Button sel={sel} onClick={check}><span>{sel ? "Вернуться к упражнениям" : "Проверить"}</span></styledComp.Button>
     </Urok1>
 }
 export default uprazneniya

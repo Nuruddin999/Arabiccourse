@@ -10,7 +10,7 @@ import { changeL1state } from "../../redux/actions/lesson1actions";
 import TextField from '@material-ui/core/TextField'
 import CheckIcon from "../../components/CheckIcon";
 import WrongIcon from "../../components/WrongIcon";
-import { Title, Button } from "./styles";
+import styledComp from "../../components/l1styles"
 
 const uprazneniya = () => {
     const rightAnswers = ["سَبُّورَةٌ", "كِتَابٌ", "مِسْطَرَةٌ", "قَلَمُ", "مُدَرِّسٌ", "مَكْتَبٌ"]
@@ -102,7 +102,7 @@ const uprazneniya = () => {
                 </div>
             </div>)}
 
-            <Button sel={sel} onClick={check}><span>{sel ? "Вернуться к упражнениям" : "Проверить"}</span></Button>
+            <styledComp.Button sel={sel} onClick={check}><span>{sel ? "Вернуться к упражнениям" : "Проверить"}</span></styledComp.Button>
         </div>
 
     </Urok1>

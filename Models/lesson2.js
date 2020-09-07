@@ -12,7 +12,7 @@ export const lesson2 = {
     }, { img: "/img/lesson2/sponge.svg", title: "مَسَّاحَةٌ", translation: "тряпка", audio: "/audio/urok2/مساحة.mp3" }, {
         img: "/img/lesson2/bookshelf.svg",
         title: "مَكْتَبَةٌ",
-        translation: "библиотека", audio: "/audio/urok2/مكتبة.mp3"
+        translation: "шкаф", audio: "/audio/urok2/مكتبة.mp3"
     }, {
         img: "/img/lesson2/idcard.svg",
         title: "بِطاقَةٌ",

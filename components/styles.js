@@ -1,7 +1,7 @@
 import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-export const MyButton = styled(Button)({
+const MyButton = styled(Button)({
     background: '#7c4dff',
     border: 0,
     borderRadius: 3,
@@ -17,3 +17,4 @@ export const itemStyles = makeStyles({
         marginTop: 10
     },
 });
+export default MyButton

@@ -2,7 +2,7 @@ import Link from "next/link";
 import style from "./mainstyle.module.css"
 import Head from "next/head";
 import { useState } from "react";
-import styledComp from "./l1styles"
+import styledComp from "../pages/urok1/l1styles"
 import NavMenu from "./NavMenu";
 const urok1 = ({ children, number }) => {
     let words = `/urok${number}/main`
